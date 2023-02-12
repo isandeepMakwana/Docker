@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web:
+    build: .
+    # command: gunicorn -b 0.0.0.0:8000 todosapp.wsgi:application
+    ports:
+      - "8000:8000"
